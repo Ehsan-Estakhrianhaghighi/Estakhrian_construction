@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estakhrian Construction | Construction & Renovation</title>
+<meta name="description" content="Estakhrian Construction — residential construction, renovation and remodeling services.">
+<style>
+:root{--dark:#111827;--gold:#d49b35;--light:#f7f5f0;--ink:#252a32;--muted:#667085}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;background:#111827;color:#fff;position:sticky;top:0;z-index:5;padding:0 max(24px,calc((100% - 1120px)/2));gap:20px}
+.brand{font-weight:800;letter-spacing:.5px;white-space:nowrap}.brand span{color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:22px}.links{display:flex;gap:24px;font-size:14px}
+.lang-switch{display:flex;border:1px solid #4b5563;border-radius:4px;overflow:hidden}.lang-switch button{border:0;background:transparent;color:#fff;padding:7px 10px;cursor:pointer;font-weight:700}.lang-switch button.active{background:var(--gold);color:#111827}
+.hero{min-height:620px;display:grid;place-items:center;color:white;text-align:center;background:linear-gradient(90deg,rgba(10,17,29,.88),rgba(10,17,29,.58)),url('hero.png') center/cover}
+.hero .content{max-width:800px;padding:70px 24px}.eyebrow{color:#f3bd5b;text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:700}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.02;margin:14px 0}.hero p{font-size:19px;max-width:650px;margin:0 auto 30px;color:#e6e9ee}
+.btn{display:inline-block;background:var(--gold);color:#111827;font-weight:700;padding:14px 22px;border-radius:4px;margin:5px}.btn.alt{background:transparent;color:#fff;border:1px solid #fff}
+section{padding:85px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 45px}.section-head h2{font-size:36px;margin:5px 0 10px;color:var(--dark)}.section-head p{color:var(--muted)}
+.services{background:var(--light)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;padding:30px;border:1px solid #e8e5de;border-radius:6px}.icon{font-size:30px}.card h3{margin:12px 0 8px}.card p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-box{background:var(--dark);color:white;padding:50px;border-radius:6px}.about-box strong{display:block;font-size:42px;color:var(--gold)}
+.projects .project{height:250px;background:#ece8df;display:flex;align-items:end;padding:25px;border-radius:6px;position:relative;overflow:hidden}.project:before{content:'';position:absolute;inset:0;background:linear-gradient(transparent,rgba(17,24,39,.82))}.project div{position:relative;color:white}.project:nth-child(1){background:linear-gradient(135deg,#9b9b96,#4c5158)}.project:nth-child(2){background:linear-gradient(135deg,#b7a98f,#5f584f)}.project:nth-child(3){background:linear-gradient(135deg,#8e9698,#42484a)}
+.contact{background:var(--dark);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#c6ccd5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-card{border:1px solid #374151;padding:28px;border-radius:6px}.contact-card h3{color:var(--gold)}.contact-link{display:block;margin:12px 0;font-size:18px}.contact-link:hover{color:var(--gold)}
+footer{background:#090e17;color:#9da5b2;text-align:center;padding:25px;font-size:13px}
+[data-lang="fr"]{display:none}
+body.fr [data-lang="en"]{display:none}
+body.fr [data-lang="fr"]{display:initial}
+body.fr div[data-lang="fr"],body.fr p[data-lang="fr"],body.fr section[data-lang="fr"]{display:block}
+@media(max-width:820px){.links{display:none}.grid,.about,.contact-grid{grid-template-columns:1fr}.hero{min-height:560px}.about{gap:25px}section{padding:65px 0}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<nav>
+<a class="brand" href="#home">ESTAKHRIAN <span>CONSTRUCTION</span></a>
+<div class="nav-right">
+<div class="links">
+<a href="#about"><span data-lang="en">About</span><span data-lang="fr">À propos</span></a>
+<a href="#services"><span data-lang="en">Services</span><span data-lang="fr">Services</span></a>
+<a href="#projects"><span data-lang="en">Projects</span><span data-lang="fr">Projets</span></a>
+<a href="#contact"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span></a>
+</div>
+<div class="lang-switch"><button id="enBtn" class="active" onclick="setLang('en')">EN</button><button id="frBtn" onclick="setLang('fr')">FR</button></div>
+</div>
+</nav>
+
+<header class="hero" id="home"><div class="content">
+<div class="eyebrow"><span data-lang="en">Built with care. Made to last.</span><span data-lang="fr">Construit avec soin. Fait pour durer.</span></div>
+<h1><span data-lang="en">Building Better Spaces</span><span data-lang="fr">Construire de meilleurs espaces</span></h1>
+<p data-lang="en">Quality residential construction, renovation and remodeling services.</p>
+<p data-lang="fr">Services de construction, de rénovation et de remodelage résidentiels de qualité.</p>
+<a class="btn" href="#contact"><span data-lang="en">Request a Free Estimate</span><span data-lang="fr">Demander une estimation gratuite</span></a>
+<a class="btn alt" href="#services"><span data-lang="en">Our Services</span><span data-lang="fr">Nos services</span></a>
+</div></header>
+
+<section id="about"><div class="wrap about">
+<div>
+<div class="eyebrow"><span data-lang="en">About us</span><span data-lang="fr">À propos</span></div>
+<h2><span data-lang="en">Craftsmanship you can rely on.</span><span data-lang="fr">Un savoir-faire sur lequel vous pouvez compter.</span></h2>
+<p data-lang="en">Estakhrian Construction is focused on creating functional, durable and beautiful spaces. From renovations to complete remodeling projects, we work closely with homeowners from planning through completion.</p>
+<p data-lang="fr">Estakhrian Construction se consacre à la création d'espaces fonctionnels, durables et esthétiques. De la rénovation aux projets de remodelage complets, nous travaillons étroitement avec les propriétaires, de la planification jusqu'à la réalisation.</p>
+<p data-lang="en">Our approach is straightforward: clear communication, attention to detail and respect for your home.</p>
+<p data-lang="fr">Notre approche est simple : une communication claire, une attention aux détails et le respect de votre maison.</p>
+</div>
+<div class="about-box">
+<strong><span data-lang="en">Quality</span><span data-lang="fr">Qualité</span></strong><p><span data-lang="en">Careful workmanship and durable results.</span><span data-lang="fr">Un travail soigné et des résultats durables.</span></p>
+<strong><span data-lang="en">Trust</span><span data-lang="fr">Confiance</span></strong><p><span data-lang="en">Clear communication throughout your project.</span><span data-lang="fr">Une communication claire tout au long de votre projet.</span></p>
+<strong><span data-lang="en">Detail</span><span data-lang="fr">Détail</span></strong><p><span data-lang="en">Thoughtful execution from start to finish.</span><span data-lang="fr">Une exécution minutieuse du début à la fin.</span></p>
+</div></div></section>
+
+<section class="services" id="services"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span data-lang="en">What we do</span><span data-lang="fr">Ce que nous faisons</span></div><h2><span data-lang="en">Our Services</span><span data-lang="fr">Nos services</span></h2><p><span data-lang="en">Construction and renovation solutions tailored to your home and project.</span><span data-lang="fr">Des solutions de construction et de rénovation adaptées à votre maison et à votre projet.</span></p></div>
+<div class="grid">
+<div class="card"><div class="icon">🏠</div><h3><span data-lang="en">Home Renovations</span><span data-lang="fr">Rénovations résidentielles</span></h3><p><span data-lang="en">Transform existing spaces with practical upgrades and high-quality finishes.</span><span data-lang="fr">Transformez vos espaces grâce à des améliorations pratiques et des finitions de qualité.</span></p></div>
+<div class="card"><div class="icon">🛁</div><h3><span data-lang="en">Kitchen & Bathroom</span><span data-lang="fr">Cuisine et salle de bain</span></h3><p><span data-lang="en">Modern remodeling focused on function, comfort and lasting design.</span><span data-lang="fr">Des rénovations modernes axées sur la fonctionnalité, le confort et un design durable.</span></p></div>
+<div class="card"><div class="icon">🔨</div><h3><span data-lang="en">General Construction</span><span data-lang="fr">Construction générale</span></h3><p><span data-lang="en">Reliable construction support for residential improvement projects.</span><span data-lang="fr">Des services fiables pour vos projets d'amélioration résidentielle.</span></p></div>
+<div class="card"><div class="icon">🪵</div><h3><span data-lang="en">Flooring</span><span data-lang="fr">Planchers</span></h3><p><span data-lang="en">Installation and finishing solutions to refresh and improve your space.</span><span data-lang="fr">Des solutions d'installation et de finition pour renouveler votre espace.</span></p></div>
+<div class="card"><div class="icon">🎨</div><h3><span data-lang="en">Painting & Finishing</span><span data-lang="fr">Peinture et finition</span></h3><p><span data-lang="en">Interior finishing work with careful preparation and clean execution.</span><span data-lang="fr">Des travaux de finition intérieure avec une préparation soignée et une exécution propre.</span></p></div>
+<div class="card"><div class="icon">📐</div><h3><span data-lang="en">Custom Projects</span><span data-lang="fr">Projets sur mesure</span></h3><p><span data-lang="en">Have something different in mind? Contact us to discuss your project.</span><span data-lang="fr">Vous avez un projet particulier? Contactez-nous pour en discuter.</span></p></div>
+</div></div></section>
+
+<section class="projects" id="projects"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span data-lang="en">Our work</span><span data-lang="fr">Nos réalisations</span></div><h2><span data-lang="en">Featured Projects</span><span data-lang="fr">Projets en vedette</span></h2><p><span data-lang="en">Project photos can be added here as the portfolio grows.</span><span data-lang="fr">Des photos de projets pourront être ajoutées ici au fur et à mesure que le portfolio s'agrandit.</span></p></div>
+<div class="grid">
+<div class="project"><div><h3><span data-lang="en">Interior Renovation</span><span data-lang="fr">Rénovation intérieure</span></h3><span><span data-lang="en">Residential</span><span data-lang="fr">Résidentiel</span></span></div></div>
+<div class="project"><div><h3><span data-lang="en">Kitchen Remodel</span><span data-lang="fr">Rénovation de cuisine</span></h3><span><span data-lang="en">Residential</span><span data-lang="fr">Résidentiel</span></span></div></div>
+<div class="project"><div><h3><span data-lang="en">Home Improvement</span><span data-lang="fr">Amélioration résidentielle</span></h3><span><span data-lang="en">Residential</span><span data-lang="fr">Résidentiel</span></span></div></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span data-lang="en">Start a project</span><span data-lang="fr">Démarrer un projet</span></div><h2><span data-lang="en">Let's Build Something Great</span><span data-lang="fr">Construisons quelque chose de remarquable</span></h2><p><span data-lang="en">Tell us about your construction or renovation project and request an estimate.</span><span data-lang="fr">Parlez-nous de votre projet de construction ou de rénovation et demandez une estimation.</span></p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3><span data-lang="en">Estakhrian Construction</span><span data-lang="fr">Estakhrian Construction</span></h3><p><span data-lang="en">Residential construction and renovation services.</span><span data-lang="fr">Services de construction et de rénovation résidentielles.</span></p></div>
+<div class="contact-card"><h3><span data-lang="en">Contact Us</span><span data-lang="fr">Contactez-nous</span></h3>
+<a class="contact-link" href="tel:+14388602678">☎ 438 860 2678</a>
+<a class="contact-link" href="mailto:estakhrian@mail.com">✉ estakhrian@mail.com</a>
+<a class="btn" href="tel:+14388602678"><span data-lang="en">Call Now</span><span data-lang="fr">Appelez maintenant</span></a>
+<a class="btn alt" href="mailto:estakhrian@mail.com"><span data-lang="en">Send Email</span><span data-lang="fr">Envoyer un courriel</span></a>
+</div></div></div></section>
+
+<footer><span data-lang="en">© 2026 Estakhrian Construction. All rights reserved.</span><span data-lang="fr">© 2026 Estakhrian Construction. Tous droits réservés.</span></footer>
+<script>
+function setLang(lang){
+ document.body.classList.toggle('fr',lang==='fr');
+ document.documentElement.lang=lang;
+ document.getElementById('enBtn').classList.toggle('active',lang==='en');
+ document.getElementById('frBtn').classList.toggle('active',lang==='fr');
+ localStorage.setItem('estakhrian-lang',lang);
+}
+setLang(localStorage.getItem('estakhrian-lang') || 'en');
+</script>
+</body>
+</html>
